@@ -1,0 +1,32 @@
+//Muestra los objetos existentes
+###
+GET http://localhost:9000 HTTP/1.1
+
+
+//Este permite crear nuevos objetos 
+###
+POST http://localhost:9000 HTTP/1.1
+Content-Type: application/json
+
+{
+    "idbooks":2,
+    "titulo":"Bajo la misma estrella",
+    "autor":"Gabriel",
+    "edicion":2
+}
+
+
+###
+DELETE http://localhost:9000/2 HTTP/1.1
+
+
+###
+PUT http://localhost:9000/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "idbooks":8,
+    "titulo":"Libro numero 3",
+    "autor":"Gabriel",
+    "edicion":4
+}
